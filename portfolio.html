@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KamranSec | Hacker Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ff99;
+      font-family: 'Share Tech Mono', monospace;
+      padding: 2rem;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+    
+    a.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  background: #00ff99;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+a.button:hover {
+  background: #00ffaa;
+}
+
+
+    nav a {
+      margin-right: 1.5rem;
+      color: #00ffaa;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid #00ffaa;
+    }
+
+    h1, h2 {
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      color: black;
+      background: #00ff99;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    a.button:hover {
+      background: #00ffaa;
+    }
+
+    .project {
+      border: 1px solid #00ff99;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background-color: #111;
+      box-shadow: 0 0 15px #00ff66;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #00ffaa;
+      font-size: 0.8rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      background: #00ff99;
+      width: 10px;
+      height: 20px;
+      animation: blink 1s steps(1) infinite;
+      vertical-align: bottom;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>[ My Portfolio ] <span class="cursor"></span></h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#tools">Tools</a>
+    <a href="#contact">Contact</a>
+    <a href="terminal.html" class="button">Launch Terminal</a>
+
+  </nav>
+
+  <section id="about">
+  <h2>> About Me</h2>
+  <p>
+    I’m <strong>Kamran</strong>, a cybersecurity enthusiast on a relentless mission to uncover vulnerabilities and build powerful tools. I specialize in 
+    <span style="color:#00ffaa;">penetration testing and</span> <span style="color:#00ffaa;">malware development.</span> 
+  </p>
+   <p>
+    I’m a cybersecurity enthusiast passionate about offensive security, ethical hacking, and building custom tools. 
+    My journey includes hands-on challenges on <strong>Hack The Box</strong>, educational labs on <strong>PortSwigger Web Security Academy</strong>, 
+    and continuous development of tools and malware in Python and Rust. I’m currently working toward certifications like 
+    <strong>eJPTv2</strong> while actively engaging in web exploitation, social engineering, and malware development.
+  </p>
+  <p>
+    🔗 Check out my public profiles:
+    <br>
+    🧠 HTB: <a href="https://app.hackthebox.com/profile/#1981353" style="color:#00ffaa;" target="_blank">https://app.hackthebox.com/profile/#1981353</a><br>
+    🛠 GitHub: <a href="https://github.com/kammo237" style="color:#00ffaa;" target="_blank">https://github.com/kammo237</a>
+     <br>🎯 <a href="https://portswigger.net/users/yourportswiggerid" target="_blank" style="color:#00ffaa;">PortSwigger Academy</a> <br>
+  </p>
+</section>
+
+<section id="projects">
+    <h2>> Projects</h2>
+
+    <div class="project">
+      <h3>> XSS Checker</h3>
+      <p>Automated reflected XSS detection using payload injection and response analysis.</p>
+      <a href="https://xss-demo.kamransec.dev" class="button" target="_blank">Launch XSS Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>> SQLi Scanner</h3>
+      <p>Multithreaded SQL Injection scanner for error-based and boolean-based vulnerabilities.</p>
+      <a href="https://sqli-demo.kamransec.dev" class="button" target="_blank">Launch SQLi Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>> Keylogger</h3>
+      <p>Python-based keylogger that captures and logs keystrokes locally for ethical testing purposes.</p>
+      <a href="keylogger.html" class="button">View Keylogger Project</a>
+    </div>
+    
+    
+    <div class="project">
+      <h3>> IP Grabber</h3>
+      <p>Custom-built IP Grabber for monitoring and logging connections in real-time.</p>
+      <a href="ipgrabber.html" class="button">View IP Grabber Project</a>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>> Tools</h2>
+    <p>Coming soon: Payload Launcher, Social Engineering Toolkit, Rust-based RATs, and more...</p>
+  </section>
+
+  <section id="contact">
+    <h2>> Contact</h2>
+    <p>Email: kamran@cybersec.dev</p>
+    <p>GitHub: <a href="https://github.com/yourusername" style="color:#00ffaa;" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Kamran Hussain | Cyberpunk Edition ⚡
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
